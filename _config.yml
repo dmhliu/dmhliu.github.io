@@ -13,9 +13,6 @@ author: Dave Liu
 
 navbar-links:
   About Me: "some info about me "
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: ""
 
 # --- Logo --- #
