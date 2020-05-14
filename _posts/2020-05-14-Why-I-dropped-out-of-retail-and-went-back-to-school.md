@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
-cover-img: /assets/img/path.jpg
+title: Why I dropped out of Retail and went back to school	
+subtitle: It's never too late to start a new chapter
+cover-img: /assets/img/sunset.jpg    
 tags: [books, test]
 ---
 
