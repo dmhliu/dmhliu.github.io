@@ -36,22 +36,11 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "dmhliu@gmail.com"
- # facebook: 
   github: dmhliu
   twitter: DaveLiu607
   rss: true
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
+  linkedin: david-liu-41332b8
 #  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
 #  telegram: yourname
 #  calendly: yourname
 
@@ -77,7 +66,7 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
+navbar-col: "#188999"
 navbar-text-col: "#404040"
 navbar-border-col: "#EAEAEA"
 page-col: "#FFFFFF"
