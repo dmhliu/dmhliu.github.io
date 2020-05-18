@@ -1,4 +1,7 @@
-
+---
+layout: minimal
+title: Links
+---
 [My Github](https://github.com/dmhliu)
 
 [My Linkedin](https://www.linkedin.com/in/david-liu-41332b8/)
