@@ -1,4 +1,11 @@
 
+---
+layout: post
+title: Why I dropped out of Retail and went back to school	
+subtitle: It's never too late to start a new chapter
+cover-img: /assets/img/sunset.jpg    
+tags: [books, test]
+---
 
     What do bike shares do for our cities? We all know that they manifest as public, often sprawling installations of docking 
 stations, buzzing with  helmeted urbanites launching into the streets on their way to.. where, excactly? 
