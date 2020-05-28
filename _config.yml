@@ -4,7 +4,7 @@
 title: Hi My Name Is...
 
 # Short description of your site
-description: My Data Science Website
+description: my data science blog
 
 # Your name to show in the footer
 author: Dave Liu
@@ -12,9 +12,10 @@ author: Dave Liu
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "about-me"
+  About Me: "aboutme"
   Author's home: "www.azaleasf.com"
   Links: "links"
+
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
@@ -40,7 +41,7 @@ social-network-links:
   twitter: DaveLiu607
   rss: true
   linkedin: david-liu-41332b8
-#  stackoverflow: "3943160/daattali"
+#  stackoverflow:
 #  telegram: yourname
 #  calendly: yourname
 
