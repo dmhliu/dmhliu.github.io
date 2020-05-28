@@ -43,5 +43,6 @@ Prior Certifications:
 - National Registry EMT-D
 - SCBA / LEVEL A HAZMAT
 - NYS Ext / Int Firefighter I
-
+- Rifle Expert
+- SECRET Security Clearance
 
