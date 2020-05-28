@@ -12,7 +12,7 @@ Personal Links:
 
 [Shop SF Fashion at my former employer:](https://www.azaleasf.com)
 
-_Data Science Links:
+Data Science Links:
 
 
 [Data Science for Social Good](http://www.dssgfellowship.org/)

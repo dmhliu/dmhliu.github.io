@@ -1,14 +1,14 @@
 ---
 layout: page
 title: About me
-subtitle: Here's a little more about my work experience and background. 
+subtitle: a little more about my work experience and background. 
 ---
 BIO
 
 Hi. Dave Liu here. I am an e-comm veteran, an analytical thinker, a problem solver, and a student of data science. My interests include: human behavior and interaction, insert  marketable subfield here*, social networks and communication as seen through the lens of the data we generate and consume. I have an eye for detail and a passion for quality. I love the artful use of language in communication. Let me know how we can work together to have an impact on our world.
 
   
-_Education and Experience Highlights:
+Education and Experience Highlights:
 
 Ithaca High School, Ithaca, Ny 1994-1999. 
 Training NonCommissioned Officer, CBIRF, USMC 1997-1999.
@@ -19,16 +19,15 @@ Software QA Eng; e-comm Fraud Detection design and operation, Tobi.com SF,CA 200
 Azalea Boutique, Inc. San Francisco, CA,  2010-2020. 
 Fundamental and advanced DS Student, Lambda School, SF, CA, 2020-Present.
  
-_Recent Skills and Technologies: 
-
-Python, Pandas
-SQL-like
-Javascript
-apache/nginx
-Bash / windows shell 
-Product Management 
-Business process design
-Integrations
+Recent Skills and Technologies:
+- Python, Pandas
+- SQL-like
+- Javascript
+- apache/nginx
+- Bash / windows shell 
+- Product Management 
+- Business process design
+- Integrations
 
 _Ecomm Platforms & Business software:
 
