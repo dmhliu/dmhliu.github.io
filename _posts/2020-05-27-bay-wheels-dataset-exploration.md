@@ -8,7 +8,7 @@ tags: [bikeshare, data, transportation, bay area, geopandas, visualization]
 
 If you're lucky enough to live in a bike share city, but aren't a bike-sharer, you've probably had and encounter with one. Since the inception of Ford's Gobike sponsorship of Bay Wheels in SF around 2017, the sprawling docking stations periodically buzz with helmeted urbanites launching into the streets and sidewalks, on their way to.. where, exactly?
  
-    Although I am a 'bike person--' there may be a fixie hanging from my ceiling-- this past year I have been driving an electric minivan-load of elementary school kids through an infite loop of pickup, drop-off and pickup again. I have more in common with the Muni driver than the average bike sharer. 
+Although I am a 'bike person--' there may be a fixie hanging from my ceiling-- this past year I have been driving an electric minivan-load of elementary school kids through an infite loop of pickup, drop-off and pickup again. I have more in common with the Muni driver than the average bike sharer. 
      Maybe I just don't align with the bikeshare model. But I've often wondered while dodging or swerving , *'whither goest thou, boosted biker? And whence returnst thou in the eve?'*
 The answer to these musings were the lofty goals at the outset of this investigation of the [Bay Wheels data set](https://www.lyft.com/bikes/bay-wheels/system-data).
    
