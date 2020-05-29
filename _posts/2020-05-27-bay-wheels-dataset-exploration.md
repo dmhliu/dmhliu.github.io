@@ -32,7 +32,7 @@ Looking at the distance in hours, it becomes apparent that the 'blank' space wou
 
 ## Where is the Where?
 
-Once we eliminated some of the dead weight , we can finally look at the most popular routes that bike-sharers take through the system. In the animated image below, the line weights are proportional to the frequency of use of a particular ‘route’. We can see clearly usage is still heavily weighted toward the center,  as the monthly trips increase from around 94,K  / month in 2018to 239K/month  in 2020 the network is growing and serving more areas. 
+Once we eliminated some of the dead weight , we can finally look at the most popular routes that bike-sharers take through the system. In the animated image below, the line weights are proportional to the frequency of use of a particular ‘route’. We can see clearly usage is still heavily weighted toward the center,  as the monthly trips increase from around 94K/month in 2018, to 239K/month in 2020. The network is growing and serving more areas. 
 
 ![test image from repo](/assets/img/baywheels2017-29_final.gif)
 
