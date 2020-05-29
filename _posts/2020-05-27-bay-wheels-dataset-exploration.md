@@ -32,4 +32,4 @@ Looking at the distance in hours, it becomes apparent that the 'blank' space wou
 
 ## Where is the Where?
 
-![test image from repo](/assets/img/test_map.gif)
+![test image from repo](/assets/img/baywheels2017-29_final.gif)
