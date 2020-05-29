@@ -1,18 +1,14 @@
-
 ---
 layout: post
-title: Why I dropped out of Retail and went back to school	
-subtitle: It's never too late to start a new chapter
-cover-img: /assets/img/sunset.jpg    
-tags: [books, test]
+title: Where Do You Go, Bike Share?  
+subtitle: Mapping bike share locations and utilization in San Francisco
+cover-img: /assets/img/stations_crop.jpg   
 ---
-
-    What do bike shares do for our cities? We all know that they manifest as public, often sprawling installations of docking 
-stations, buzzing with  helmeted urbanites launching into the streets on their way to.. where, excactly? 
-    Although I have a bike or two of my own, have driven an electric minivan full of elementary school kids on an infite loop of pickup drop-off, pickup again for the last few years, and avail myself many modes of transportation, I just don't align with the bikeshare model. but I've often wondered while dodging or swerving, *'whither goest thou, boosted biker? And whence returnst thou in the eve?'*
-The answer to these musings were the lofty goals at the outset of my investigation of the [Bay Wheels data set](https://www.lyft.com/bikes/bay-wheels/system-data) First lets have a look at 
-
-
+    If you're lucky enough to live in a bike share city, but aren't a bike-sharer, you've probablly had and encounter with one. Since the inception of Fords Gobike in SF around 2017, the sprawling docking stations periodically buzz with helmeted urbanites launching into the streets and sidewalks,l on their way to.. where, excactly?
+    Although I am 'bike person,' with a bike or two of my own-- for the last few years I have driven an electric minivan -l elementary school kids on an infite loop of pickup drop-off, pickup again. I have more in common with the Muni driver than the average bike sharer. 
+     I just don't align with the bikeshare model. But I've often wondered while dodging or swerving , *'whither goest thou, boosted biker? And whence returnst thou in the eve?'*
+The answer to these musings were the lofty goals at the outset of my investigation of the [Bay Wheels data set](https://www.lyft.com/bikes/bay-wheels/system-data)
+    
 
 TODO: insert images generated from stations.. 
 
