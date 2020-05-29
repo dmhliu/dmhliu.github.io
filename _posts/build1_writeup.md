@@ -6,6 +6,7 @@ stations, buzzing with  helmeted urbanites launching into the streets on their w
 The answer to these musings were the lofty goals at the outset of my investigation of the [Bay Wheels data set](https://www.lyft.com/bikes/bay-wheels/system-data) First lets have a look at 
 
 
-
 TODO: insert images generated from stations.. 
 
+    ![eda with scatterplots]('https://github.com/dmhliu/dmhliu.github.io/blob/master/assets/img/202002-baywheels-tripdata.csv.jpg' "EDA 1")
+    
