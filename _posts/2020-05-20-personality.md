@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Can Online Personality Tests help with Professional Development?	
-subtitle: getting results from the results
-tags: [proffessionalism, tests, communication, personality, teams, growth]
+subtitle: Getting results from the results
+tags: [professionalism, tests, communication, personality, teams, growth]
 ---
 Skeptic, analyst, perfectionist, believer. These are some of the terms that consistently recur when I explore the many different personality assessments that are popular online. Although these tests are carefully framed to focus on the positive aspects of personality and to avoid negative language, I think that they speak to both the strengths and weakness inherent in one’s mental and social configuration. If we want to be more positive, we could refer to those weaknesses as ‘opportunities for growth and improvement,’ but I do prefer what I call a ‘direct communication style.’ This is a good example of a ambivalent character trait that can be beneficial or detrimental depending on the context. Over time, I’ve realized that most people, especially in the the work environments I’ve experienced, seek to avoid conflict and discomfort. Therefore what I might consider an honest and direct statement may be perceived as critical, negative, or judgmental. Many people are sensitive to their perception of blame or ‘fault.’ In order to give myself the space to empathize with others and tailor my communication to the situation, when I am providing corrections or analysis of a problem, most of the time I save my email as a draft, or even an offline document, and come back to it to evaluate it before sending. I believe this practice has helped with work relationships and productivity. 
 
