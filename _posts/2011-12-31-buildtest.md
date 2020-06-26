@@ -2,7 +2,7 @@
 layout: post
 title: Exploration in Modeling with SF 311
 subtitle: Trying to predict 
-cover-img: /assets/img/rainbow.jpg
+cover-img: /assets/img/rainbow.png
 tags: [SF311, opendata, public, bay area, quality of life, modeling,predictions]
 ---
 
