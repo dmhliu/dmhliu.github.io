@@ -79,54 +79,7 @@ In order to extract more predictive power from the past data, we create another 
         not_closed_prior = ~(df['Closed'] < sometime) # not closed, 
         open_at_thattime = opened_prior & not_closed_prior  #and 
         return open_at_thattime.sum()
-### Now lets look more at these and our features:
-
-    dropping all in droprows..
-    
-    applying mask:  drop_missing_caseid
-    
-    applying mask:  drop null open date
-    
-    applying mask:  muni
-    
-    applying mask:  svc_req
-    
-    applying mask:  gen_req
-    
-     dropping (0,) rows
-    
-    working df is being changed..
-    converting Opened to datetime
-    converting Closed to datetime
-    converting Updated to datetime
-    
-     Encoding, changing working copy..
-      ... encoding column:  Request Details
-      ... encoding column:  Neighborhood
-      ... encoding column:  Police District
-      ... encoding column:  Analysis Neighborhoods
-      ... encoding column:  Neighborhoods
-      ... encoding column:  Street
-      ... encoding column:  Media URL
-      ... encoding column:  CaseID
-    
-    added feature: ttr
-
-
-    
-    added feature: ttr
-
-
-    /home/dliu/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:17: UserWarning:
-    
-    Boolean Series key will be reindexed to match DataFrame index.
-    
-
-
-
-
-
-    (0, 25)
+### Now lets look more at our features:
 
 
 
@@ -138,7 +91,7 @@ In order to extract more predictive power from the past data, we create another 
 - extreme values in TTR
 
 
-![png](buildconv_files/buildconv_15_0.png)
+![png](/assets/buildconv_files/buildconv_15_0.png)
 
 
 ## Monthly Case Statistics
