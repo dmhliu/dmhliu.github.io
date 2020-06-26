@@ -177,39 +177,20 @@ and then:
     (0.4929255097794424, 0.4899284168470118)
 
 #### ... and survey says, LogReg not so hot. 
-With validation and test accuracy of (0.4929255097794424, 0.490427834193441), this certainly sets a baseline for further model evaluation. 
+With validation and test accuracy of (0.4929255097794424, 0.490427834193441), this certainly sets a baseline for further model evaluation. Here are the results of several iterations of various tree models:
 
     decisiontreeclassifier
     Training Accuracy: 0.9958901258974092
     Validation Accuracy: 0.5624219725343321
     Test Accuracy: 0.5568503412685201
     baseline Accuracy: 0.45037456300982187 
-    
-                  precision    recall  f1-score   support
-    
-            high       0.68      0.69      0.69      2633
-             low       0.55      0.54      0.54      1590
-             med       0.38      0.38      0.38      1784
-    
-        accuracy                           0.56      6007
-       macro avg       0.54      0.54      0.54      6007
-    weighted avg       0.56      0.56      0.56      6007
-    
+   
+  
     randomforestclassifier
     Training Accuracy: 0.7205805847466444
     Validation Accuracy: 0.643986683312526
     Test Accuracy: 0.6435824870983852
     baseline Accuracy: 0.45037456300982187 
-    
-                  precision    recall  f1-score   support
-    
-            high       0.67      0.91      0.77      2633
-             low       0.65      0.68      0.67      1590
-             med       0.51      0.22      0.30      1784
-    
-        accuracy                           0.64      6007
-       macro avg       0.61      0.60      0.58      6007
-    weighted avg       0.62      0.64      0.60      6007
     
     xgbclassifier
     Training Accuracy: 0.6871293309749246
@@ -227,15 +208,8 @@ With validation and test accuracy of (0.4929255097794424, 0.490427834193441), th
        macro avg       0.61      0.60      0.58      6007
     weighted avg       0.62      0.64      0.60      6007
     
-
-
-    xgbclassifier
-    [[1921   58  139]
-     [ 258  888  155]
-     [ 680  422  285]]
-
-
-
+### ok thats a bit better, trees win
+Althoguth
 ![png](/assets/build_conv_files/buildconv_29_1.png)
 
 
@@ -323,7 +297,7 @@ df_dl.workload.mean(), df_dl.workload.std()  = (207.0688439849624, 134.492434734
 
 ### Will a tree model perform better?
 
-Linear regression isnt really working well for this data. Shall we see if a tree model can better handle the non-monotonic change in workload? Using the same train / test split from above, we have to shape the arrays differently before feeding them to the tree ensemble. 
+Based the R-squared error metric, linear regression isn't really working well for this data. There is just too much variance that isn't accounted for. Let us see if a tree model can better handle the non-monotonic changes in workload. Using the same train / test split from above, we have to shape the arrays differently before feeding them to the tree ensemble. 
 
 
     interactive(children=(IntSlider(value=3, description='max_depth', max=10, min=1), IntRangeSlider(value=(0, 120…
