@@ -209,30 +209,9 @@ With validation and test accuracy of (0.4929255097794424, 0.490427834193441), th
     weighted avg       0.62      0.64      0.60      6007
     
 ### ok thats a bit better, trees win
-Althoguth
+Although we are much better at predicting the majority class, 'high' its not surprising. Here is a visual representation of the classification data in the form of confusion matrix:
+
 ![png](/assets/build_conv_files/buildconv_29_1.png)
-
-
-
-
-
-    ['Responsible Agency',
-     'Category',
-     'Request Type',
-     'Request Details',
-     'Address',
-     'Street',
-     'Neighborhood',
-     'Police District',
-     'Latitude',
-     'Longitude',
-     'Source',
-     'Media URL',
-     'Analysis Neighborhoods',
-     'Neighborhoods',
-     'case_year',
-     'case_month']
-
 
 
 ### Linear regression lite, Plotly Express with OLS trendline :
@@ -323,14 +302,8 @@ Based the R-squared error metric, linear regression isn't really working well fo
 lets see what happens if we just treat the workload to a linear regression, with a random split:
 
 
+![png](/assets/build_conv_files/pxols.png)
 
-    interactive(children=(IntSlider(value=8, description='max_depth', max=10, min=1), FloatSlider(value=0.8, descr…
-
-
-
-
-
-    <function __main__.f(md, ts, tvt_split='OFF')>
 
 
 
