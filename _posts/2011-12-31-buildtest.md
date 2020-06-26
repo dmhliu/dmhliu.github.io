@@ -91,7 +91,7 @@ In order to extract more predictive power from the past data, we create another 
 - extreme values in TTR
 
 
-![png](/assets/buildconv_files/buildconv_15_0.png)
+![png](/assets/build_conv_files/buildconv_15_0.png)
 
 
 ## Monthly Case Statistics
@@ -101,7 +101,7 @@ In order to extract more predictive power from the past data, we create another 
 
 
 
-![png](buildconv_files/buildconv_18_0.png)
+![png](/assets/build_conv_files/buildconv_18_0.png)
 
 
 ### How can we model the ttr and predict the resolution time of a case opened?
@@ -251,7 +251,7 @@ With validation and test accuracy of (0.4929255097794424, 0.490427834193441), th
 
 
 
-![png](buildconv_files/buildconv_29_1.png)
+![png](/assets/build_conv_files/buildconv_29_1.png)
 
 
 
@@ -387,7 +387,7 @@ Now that we have run ican see the deficiencies of regression models, we need to 
 
 
 
-![png](buildconv_files/buildconv_40_0.png)
+![png](/assets/build_conv_files/buildconv_40_0.png)
 
 
 ## Rolling Means for Daily Workload
@@ -397,18 +397,18 @@ To see through some of the daily variance, and try to look for seasonal effects 
 In contrast, the *mean time to resolution (ttr) in hours* shows extreme fluctuations, but perhaps without a clear upward trend. We'll look at this more later
 
 
-![png](buildconv_files/buildconv_42_0.png)
+![png](/assets/build_conv_files/buildconv_42_0.png)
 
 
 
 
 
-![png](buildconv_files/buildconv_43_0.png)
+![png](/assets/build_conv_files/buildconv_43_0.png)
 
 
 
 
-![png](buildconv_files/buildconv_43_1.png)
+![png](/assets/build_conv_files/buildconv_43_1.png)
 
 
     p value is 0.41090577512001386
@@ -1114,5 +1114,5 @@ Since the p value islarger than the significance level of 0.05, we can reject th
 
 
 
-![png](buildconv_files/buildconv_52_0.png)
+![png](/assets/build_conv_files/buildconv_52_0.png)
 
