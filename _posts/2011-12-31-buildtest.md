@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exploration in Modeling with SF 311
-subtitle: Trying to predict 
+title: Exploration in Modeling with SF 311 Cases
+subtitle: Or How Long Will It Take Someone To Clean the Poop Off My Doorstep?
 cover-img: /assets/img/rainbow.png
 tags: [SF311, opendata, public, bay area, quality of life, modeling,predictions]
 ---
@@ -12,7 +12,8 @@ tags: [SF311, opendata, public, bay area, quality of life, modeling,predictions]
 Provided by [DataSF](https://data.sfgov.org/City-Infrastructure/311-Cases/vw6y-z8j6), this set is a monstrosity containing about 4.25 Million rows and counting. For those not familiar, 311 is a general customer service number for city government, most commonly associated with non-emergency complaints. 311 cases can be created via phone, mobile, and web. The dataset covers the time period from July 2008 until present. 
 
 In order to do data exploration and analysis of this dataset we needed to make a working sample to reduce memory and cpu usage upfront: 
-    <pre><code>awk 'BEGIN {srand()} !/^$/ { if (rand() <= .01 || FNR==1) print $0}' filename</code></pre>
+    
+    awk 'BEGIN {srand()} !/^$/ { if (rand() <= .01 || FNR==1) print $0}' filename</code>
 
 Further information about the dataset can be found [here.](https://support.datasf.org/help/311-case-data-faq)
 
@@ -27,7 +28,7 @@ From my personal observation, corroborated by many of my peers, once the 311 cas
 ### If only there were a way to ***predict*** *how long it would take to resolve each issue...* 
 Well, luckily, there *are* ways, in particular statistical learning models, and we shall see what fruit they may bear. 
 
-### Datacleaning highlights:
+### Data processing highlights:
 - encode, convert or cast every single feature
 - extreme values
 - malformed data
@@ -39,8 +40,6 @@ Well, luckily, there *are* ways, in particular statistical learning models, and 
 Here are the top cases filed against the city's public tranportation operation:
 
 
-
-
     MUNI - Conduct_Inattentiveness_Negligence                         0.240359
     MUNI - Services_Service_Delivery_Facilities                       0.160987
     MUNI - Conduct_Discourteous_Insensitive_Inappropriate_Conduct     0.112108
@@ -50,24 +49,23 @@ Here are the top cases filed against the city's public tranportation operation:
     MUNI - Services_Service_Planning                                  0.046188
     MUNI  -                                                           0.045291
     MUNI  - Conduct_Discourteous_Insensitive_Inappropriate_Conduct    0.039462
-    MUNI - Commendation                                               0.039013
+    MUNI - **Commendation**                                           0.039013
     MUNI  - Conduct_Inattentiveness_Negligence                        0.035426
     MUNI  - Services_Miscellaneous                                    0.031839
     MUNI  - Conduct_Unsafe_Operation                                  0.024664
     MUNI  - Services_Service_Planning                                 0.021525
     MUNI - Services_Criminal_Activity                                 0.016592
     MUNI  - Services_Criminal_Activity                                0.001794
-    SSP SFMTA Feedback                                                0.000448
-    Name: Request Type, dtype: float64
 
 
 
-### So.... I was wrong about it being ALL BAD...
+### So.... I was wrong about it being ALL bad...
 
 Fully **3%** of the MUNI cases are commendations for MUNI employees. Sounds about right. I would draw your attention to the subject of the remaining cases but I promised not to bash them...
+#### Anyway, back  to the future:
 
-### We want to predict how long it will take for our ticket to be resolved but that feature didnt't exist.
-So it was created by finding the time difference between the *Opened* and *Closed* timestamp. We will call this the ***Time To Resolution*** or ***ttr** for short:
+### We want to predict how long it will take for our case to be resolved, but that feature didnt't exist.
+It was created by finding the time difference between the *Opened* and *Closed* timestamp. We will call this the ***Time To Resolution*** or ***ttr** for short:
 
       wrangler.make_feature('ttr',['Opened','Closed'],lambda x : x[1]-x[0])
 
