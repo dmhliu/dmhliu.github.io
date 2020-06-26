@@ -18,13 +18,14 @@ In order to do data exploration and analysis of this dataset we needed to make a
 Further information about the dataset can be found [here.](https://support.datasf.org/help/311-case-data-faq)
 
 
-## One of the fascinating aspects of city living is human behavior.
-One behavior every human seems to enjoy is complaining, in some shape way or form. Whether its done in exercise of right to recourse, for entertainment, or out of civic duty, we encounter a situtation that make us uncomfortable... in SF, we file a 311 case on it. You can even do it via Twitter! I wanted to focus on the subset of cases that reflect the spirit of 'complaints--' in particular those concerned with the behavior of others-- and generally require some sort of short term physical response. 
+## One of the fascinating aspects of city living is human behavior. 
+### We're going to look at what people complain about.
+One behavior every human seems to enjoy is complaining, in some shape, way, or form. Whether its done in exercise of rights to recourse, for entertainment, or out of civic duty, we encounter a situtation that make us uncomfortable and... in SF, *we open a 311 case on it. You can even do it via Twitter!* I wanted to focus on the subset of cases that reflect the spirit of 'complaints--' in particular those concerned with the behavior of others-- and that usually require some sort of short term physical response to resolve. 
 
-Sadly, it seems there aren't many cases filed to commend folks for good behavior, so we will be looking at mostly negative or unpleasant situations here. Accordingly, we have attempted to exclude cases concerning general administrative requests, such as building permits, tree maintenance,  and the like. In addition, despite it being filled with negative comments, I also chose to exclude the muni category, insofar as the Muni (city bus & train operators) is its own organization with its own culture, that I don't care to upset by pointout the exceedingly high volume of complaints.
+Sadly, there aren't many cases filed to commend folks for good behavior, so we will be looking at mostly negative or unpleasant situations here. Accordingly, we have attempted to exclude cases concerning general administrative requests, such as building permits, tree maintenance,  and the like. Also, despite it being filled with negative comments, I also chose to exclude the muni category, insofar as the Muni (city bus & train operators) is its own organization with its own culture, and union, that I don't care to upset by pointing out the exceedingly high volume of complaints.
 
-From my personal observation, corroborated by many of my peers, once the 311 case is filed it goes into a black box, and we can only hope to guess at if or when the matter will be addressed. This can be very frustrating for the complainant, and in turn likely results in corresponding frustration for the people inside the black box, who receive many repeated complaints each day
-. 
+From my personal experience, once the 311 case is filed, as with many government functions, what happens next is a mystery. It goes into a black box, and we can only hope to guess at if or when the matter will be addressed. This can be very frustrating for the complainant, and in turn likely results in corresponding frustration for the people inside the black box, who receive many repeated complaints each day.
+
 ### If only there were a way to ***predict*** *how long it would take to resolve each issue...* 
 Well, luckily, there *are* ways, in particular statistical learning models, and we shall see what fruit they may bear. 
 
@@ -160,34 +161,20 @@ So we will add the target classes to as above with out dropping, yielding the fo
 
 
 ### Time to predict the future.... 
-We have simplifed our problem to predicting whether the case we open today will be resolved in one of three time intervals, making this a classfication problem. Our first approach will be to fit a logistic regression, followed by some tree based classifiers. At this point we'll drop *CaseID, Status, Notes, and any TimeStamped columns* that can either uniquely identify the case, or contain information that was not known at the time of creation. We can retain some features like hour of the day, day of week. 
+We have simplifed our problem to predicting whether the case we open today will be resolved in one of three time intervals, making this a classfication problem. Our first approach will be to fit a simple logistic regression, followed by some tree based classifiers. At this point we'll drop *CaseID, Status, Notes, and any TimeStamped columns* that can either uniquely identify the case, or contain information that was not known at the time of creation. We can retain some features like hour of the day, day of week. Like so:
 
     features = df.columns.drop(['CaseID','Opened','Closed','Updated','Status',
     'Status Notes','ttr','workload','ttr_class']) #drop time or status related columns
 
+and then: 
 
-
-
-
-
-
-    (Index(['Responsible Agency', 'Category', 'Request Type', 'Request Details',
-            'Address', 'Street', 'Neighborhood', 'Police District', 'Latitude',
-            'Longitude', 'Source', 'Media URL', 'Analysis Neighborhoods',
-            'Neighborhoods', 'case_year', 'case_month'],
-           dtype='object'), 'ttr_class')
-
-
-
-    (19222, 26) (4806, 26)
-
-
-
-
-
+    ...setup stuff...
+    logreg.fit(X_train,y_train);
+    y_val_pred= logreg.predict(X_val)
+    y_pred_proba=logreg.predict_proba(X_val); #need for ROC
+    y_test_pred= logreg.predict(X_test)
+    accuracy_score(y_val,y_val_pred) ,accuracy_score(y_test,y_test_pred)
     (0.4929255097794424, 0.4899284168470118)
-
-
 
 #### ... and survey says, LogReg not so hot. 
 With validation and test accuracy of (0.4929255097794424, 0.490427834193441), this certainly sets a baseline for further model evaluation. 
