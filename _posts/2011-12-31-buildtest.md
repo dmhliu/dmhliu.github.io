@@ -362,10 +362,9 @@ if (notebookContainer) {{x.observe(notebookContainer, {childList: true});}}
 
 // Listen for the clearing of the current output cell
 var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
+{% raw %}
+if (outputEl) {{    x.observe(outputEl, {childList: true});}}
+{% endraw %}
                         })
                 };
                 });
