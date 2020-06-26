@@ -213,6 +213,16 @@ Although we are much better at predicting the majority class, 'high' its not sur
 
 ![png](/assets/build_conv_files/buildconv_29_1.png)
 
+### Why can't our models achieve better performance with all this data?
+For one the amount of data we have in terms of **time** is vast... Recall the trends observed in the data exploration. We see at least two types of motion, one linearly up, and the other oscillating at various frequencies. Unfortunately the simplistic approach to our data is likely be confounding the models. What other influences could be at play?
+
+- Are there seasonal trends for some types of cases?
+- Are external factors, like population growth relevant?
+- Public sentiment and news about 311? 
+
+All of the above seem likely. Separating out factors like seasonality and other multi-year cycles from the trends are part of another methodology, ***time series analysis***. While I don't have the time or experience yet to fully elaborate this, we can use some of the tools already demonstrated to set the stage. 
+
+Let us revisit the 'workload' feature as a function of time
 
 ### Linear regression lite, Plotly Express with OLS trendline :
 
@@ -314,9 +324,7 @@ This is what happens when you train your model on a time series with time based 
 
 ### Where do we go from here? Lets do some window-looking. 
 
-Now that we have run ican see the deficiencies of regression models, we need to introduce some means to better interpret the data. If there appears to be a periodic fluctuation, we can use a **rolling average**, or **moving mean** to smooth out short term variance and visualize larger trends. Below I introduce another calculated feature of the data, the *time to resolution* or *ttr* for a specific case. This is very simple; it is the time difference between the open and close for that case. In the data its expressed as a *timedelta* object, and cast to various datatypes, such as *
-
-
+Now that we can see the deficiencies of regression models, we need to introduce some means to better interpret the data. If there appears to be a periodic fluctuation, we can use a **rolling average**, or **moving mean** to smooth out short term variance and visualize larger trends. Below I introduce another calculated feature of the data, the *time to resolution* or *ttr* for a specific case. This is very simple; it is the time difference between the open and close for that case. In the data its expressed as a *timedelta* object, and cast to various datatypes, such as *
 
 
 ![png](/assets/build_conv_files/buildconv_40_0.png)
