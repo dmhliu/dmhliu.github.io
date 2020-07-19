@@ -20,23 +20,19 @@ Education and Experience Highlights:
 - Fundamental and advanced DS Student, Lambda School, SF, CA, 2020-Present.
  
 Recent Skills and Technologies:
-- Python, Pandas
-- SQL-like
-- Javascript
-- apache/nginx
-- Bash / windows shell 
+- Python, SQL, JS 
+- Bash, Windows Powershell
+- Apache, Nginx, SAMBA, Postgres, Sinatra
 - Product Management 
 - Business process design
 - Integrations
 
 Ecomm Platforms & Business software:
 
-- AWS
-- Proxmox VW
-- Shopify
-- Prestashop
-- Netsuite / Retail Pro v8
-- MS Excel
+- AWS Infrastructure: EC2, RDS, S3, VPC, Route 53
+- Container Virtualization: Proxmox VE, virtio, 
+- Shopify, Prestashop, Magento
+- Netsuite ERP : Admin, Customization, Integrations
 
 Prior Certifications: 
 
